@@ -10,12 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_04_18_133400) do
+ActiveRecord::Schema.define(version: 2018_04_18_221317) do
 
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.string "url"
     t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", limit: 100
+    t.string "password_digest"
+    t.string "name", limit: 100
+    t.string "twitter_handler", limit: 50
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
