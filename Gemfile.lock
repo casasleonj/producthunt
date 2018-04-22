@@ -52,13 +52,18 @@ GEM
     arel (9.0.0)
     autoprefixer-rails (8.3.0)
       execjs
-    aws-sdk (2.11.35)
-      aws-sdk-resources (= 2.11.35)
-    aws-sdk-core (2.11.35)
+    aws-partitions (1.80.0)
+    aws-sdk-core (3.19.0)
+      aws-partitions (~> 1.0)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.35)
-      aws-sdk-core (= 2.11.35)
+    aws-sdk-kms (1.5.0)
+      aws-sdk-core (~> 3)
+      aws-sigv4 (~> 1.0)
+    aws-sdk-s3 (1.9.1)
+      aws-sdk-core (~> 3)
+      aws-sdk-kms (~> 1)
+      aws-sigv4 (~> 1.0)
     aws-sigv4 (1.0.2)
     bcrypt (3.1.11)
     bindex (0.5.0)
@@ -179,6 +184,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    redcarpet (3.0.0)
     ruby_dep (1.5.0)
     rubyzip (1.2.1)
     sass (3.5.6)
@@ -237,7 +243,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
-  aws-sdk (~> 2.3)
+  aws-sdk-s3
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   bootstrap-sass (~> 3.3.7)
@@ -254,6 +260,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2.0)
   rails_12factor
+  redcarpet (~> 3.0.0)
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
