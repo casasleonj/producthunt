@@ -33,6 +33,7 @@ gem 'xmlrpc'
 #gravatar
 gem 'gravatar-ultimate'
 gem 'annotate'
+gem "paperclip", "~> 6.0.0"
 #Appliacion javascript
 gem 'jquery-rails'
 # Use ActiveStorage variant
