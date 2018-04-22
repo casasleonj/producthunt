@@ -12,10 +12,13 @@
 
 ActiveRecord::Schema.define(version: 2018_04_22_021714) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "comments", force: :cascade do |t|
     t.text "body"
-    t.integer "product_id"
-    t.integer "user_id"
+    t.bigint "product_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["product_id"], name: "index_comments_on_product_id"
@@ -28,7 +31,7 @@ ActiveRecord::Schema.define(version: 2018_04_22_021714) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id"
+    t.bigint "user_id"
     t.string "image_file_name"
     t.string "image_content_type"
     t.integer "image_file_size"
@@ -46,12 +49,17 @@ ActiveRecord::Schema.define(version: 2018_04_22_021714) do
   end
 
   create_table "votes", force: :cascade do |t|
-    t.integer "product_id"
-    t.integer "user_id"
+    t.bigint "product_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["product_id"], name: "index_votes_on_product_id"
     t.index ["user_id"], name: "index_votes_on_user_id"
   end
 
+  add_foreign_key "comments", "products"
+  add_foreign_key "comments", "users"
+  add_foreign_key "products", "users"
+  add_foreign_key "votes", "products"
+  add_foreign_key "votes", "users"
 end
