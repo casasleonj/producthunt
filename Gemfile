@@ -29,11 +29,12 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 # xmlrpc
 gem 'xmlrpc'
-
 #gravatar
 gem 'gravatar-ultimate'
 gem 'annotate'
 gem "paperclip", "~> 6.0.0"
+#aws s3
+gem 'aws-sdk', '~> 2.3'
 #Appliacion javascript
 gem 'jquery-rails'
 # Use ActiveStorage variant
@@ -50,8 +51,6 @@ group :development, :test do
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-#aws s3
-gem 'aws-sdk', '~> 2.3'
 end
 
 group :development do
