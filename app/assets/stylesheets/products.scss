@@ -43,6 +43,13 @@
     .upvote-count { color: #F04500; }
   }
 }
+
+.product-img {
+  float: left;
+  margin-right: 30px;
+
+  img { border-radius: 3px; }
+}
     .product-details {
       float: left;
 
