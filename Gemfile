@@ -34,6 +34,8 @@ gem 'xmlrpc'
 gem 'gravatar-ultimate'
 gem 'annotate'
 gem "paperclip", "~> 6.0.0"
+#aws s3
+gem 'aws-sdk', '~> 3'
 #Appliacion javascript
 gem 'jquery-rails'
 # Use ActiveStorage variant
