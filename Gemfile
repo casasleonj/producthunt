@@ -39,7 +39,8 @@ gem 'aws-sdk-s3'
 gem 'jquery-rails'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+#sensitive information
+gem "figaro"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
