@@ -16,7 +16,7 @@ class User < ApplicationRecord
 
 	has_many :products, dependent: :destroy
 	has_many :comments, dependent: :destroy
-	has_many :votes, dependent: :destroy
+	has_many :votes
 
 	validates :email, uniqueness: true, format: /@/
 	validates :password, presence: true, on: :create
