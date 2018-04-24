@@ -33,9 +33,10 @@ gem 'xmlrpc'
 gem 'gravatar-ultimate'
 gem 'annotate'
 #upload image or files
-gem 'paperclip'
+gem "paperclip", "~> 6.0.0"
 #aws s3
 #gem 'aws-sdk', '~> 2.3'
+
 gem 'aws-sdk-s3'
 #Appliacion javascript
 gem 'jquery-rails'
