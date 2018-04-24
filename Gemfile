@@ -32,7 +32,7 @@ gem 'xmlrpc'
 #gravatar
 gem 'gravatar-ultimate'
 gem 'annotate'
-gem "paperclip", "~> 6.0.0"
+gem "paperclip"
 #aws s3
 gem 'aws-sdk-s3', '~> 1.0.0.rc2'
 #Appliacion javascript
