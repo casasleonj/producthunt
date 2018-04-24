@@ -36,7 +36,7 @@ gem 'annotate'
 gem 'paperclip'
 #aws s3
 #gem 'aws-sdk', '~> 2.3'
-gem 'aws-sdk-s3', '~> 1.0.0.rc2'
+gem 'aws-sdk-s3'
 #Appliacion javascript
 gem 'jquery-rails'
 # Use ActiveStorage variant
