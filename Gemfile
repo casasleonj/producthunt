@@ -32,6 +32,7 @@ gem 'xmlrpc'
 #gravatar
 gem 'gravatar-ultimate'
 gem 'annotate'
+#upload image or files
 gem "paperclip", "~> 6.0.0"
 #aws s3
 gem 'aws-sdk-s3', '~> 1.0.0.rc2'
