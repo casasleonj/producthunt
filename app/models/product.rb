@@ -20,7 +20,7 @@ belongs_to :user
 has_many :comments, dependent: :destroy
 has_many :votes, dependent: :destroy
 
-has_attached_file :image, styles: {medium: '300x300>', thumb: '100x100>'}
+has_attached_file :image, styles: {medium: '300x300>', square: '200x200#', thumb: '100x100>'}
 
 
 	validates :name, presence: true
