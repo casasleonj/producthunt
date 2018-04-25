@@ -31,6 +31,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'xmlrpc'
 #gravatar
 gem 'gravatar-ultimate'
+#tables's specific in module
 gem 'annotate'
 #upload image or files
 gem "paperclip", "~> 6.0.0"
